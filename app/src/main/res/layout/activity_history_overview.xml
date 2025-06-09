@@ -12,9 +12,10 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
-        android:fillViewport="true">
+        android:fillViewport="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/pieChartContainer"
@@ -28,18 +29,18 @@
                 android:id="@+id/pieChart"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:background="#1E4D8B"
-                android:layout_marginBottom="24dp" />
+                android:layout_marginBottom="24dp"
+                android:background="#1E4D8B" />
 
             <!-- Categories Label -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:text="Categories"
                 android:textColor="#FFFFFF"
-                android:textStyle="bold"
                 android:textSize="18sp"
-                android:layout_marginBottom="16dp" />
+                android:textStyle="bold" />
 
             <!-- Category List Container -->
             <LinearLayout
@@ -52,13 +53,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <include
-        layout="@layout/bottom_nav"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
