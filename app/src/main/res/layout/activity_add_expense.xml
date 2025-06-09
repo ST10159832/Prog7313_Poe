@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D2B4C"
+    android:padding="16dp">
+
+    <!-- Page Title -->
+    <TextView
+        android:id="@+id/titleAddExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD EXPENSE"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Category Field -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#1E4D8B"
+        app:layout_constraintTop_toBottomOf="@id/titleAddExpense"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp">
+
+        <EditText
+            android:id="@+id/etExpenseCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category"
+            android:padding="12dp"
+            android:textColorHint="#DDDDDD"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Expense Name Field -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#1E4D8B"
+        app:layout_constraintTop_toBottomOf="@id/cardCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/etExpenseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Expense Name"
+            android:padding="12dp"
+            android:textColorHint="#DDDDDD"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Amount Field -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#1E4D8B"
+        app:layout_constraintTop_toBottomOf="@id/cardName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/etExpenseAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColorHint="#DDDDDD"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Date Field -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#1E4D8B"
+        app:layout_constraintTop_toBottomOf="@id/cardAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/etExpenseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="12dp"
+            android:textColorHint="#DDDDDD"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmitExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/cardDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

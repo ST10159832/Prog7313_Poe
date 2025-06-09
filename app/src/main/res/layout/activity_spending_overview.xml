@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D2B4C"
+    android:padding="16dp">
+
+    <!-- Page Title -->
+    <TextView
+        android:id="@+id/tvGraphTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spending Overview"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Line Chart -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#1E4D8B"
+        app:layout_constraintTop_toBottomOf="@id/tvGraphTitle"
+        app:layout_constraintBottom_toTopOf="@id/yourActivityCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Your Activity Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yourActivityCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#1E4D8B"
+        app:layout_constraintBottom_toTopOf="@id/recommendedSpendingCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvYourActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Activity"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Message below Your Activity -->
+            <TextView
+                android:id="@+id/tvYourActivityMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your activity trends will appear here."
+                android:textColor="#D0D0D0"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Recommended Spending Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recommendedSpendingCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#1E4D8B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvRecommendedSpending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recommended Spending"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Message below Recommended Spending -->
+            <TextView
+                android:id="@+id/tvRecommendedSpendingMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recommended trends based on your goals will show here."
+                android:textColor="#D0D0D0"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

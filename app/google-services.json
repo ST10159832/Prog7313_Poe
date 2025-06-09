@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "30887007776",
+    "project_id": "prog7313finalpoe",
+    "storage_bucket": "prog7313finalpoe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30887007776:android:5582f3a304312039914e45",
+        "android_client_info": {
+          "package_name": "com.example.prog7313finalpoe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDhGOTjb-X3fmpQKsaGsb1zs3w5MazHuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
