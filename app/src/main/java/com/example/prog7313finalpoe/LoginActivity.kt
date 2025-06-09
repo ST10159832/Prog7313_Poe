@@ -45,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
                         // Navigate to HomeActivity after successful login
                         val intent = Intent(this, HomeActivity::class.java)
                         startActivity(intent)
-                        finish() // Optional: closes LoginActivity
+                        //finish() // Optional: closes LoginActivity
                     } else {
                         val error = task.exception?.message ?: "Login failed"
                         Toast.makeText(this, error, Toast.LENGTH_LONG).show()
