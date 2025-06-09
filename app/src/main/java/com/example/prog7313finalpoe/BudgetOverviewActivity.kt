@@ -17,6 +17,9 @@ import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
 
+// Handle activity lifecycle for proper resource management
+// Source: Android Developers (2024)
+
 class BudgetOverviewActivity : AppCompatActivity() {
     private lateinit var currentBudgetText: TextView
     private lateinit var spentText: TextView
@@ -67,7 +70,7 @@ class BudgetOverviewActivity : AppCompatActivity() {
         incomeMaxText = findViewById(R.id.incomeMaxText)
         lineChart = findViewById(R.id.lineChart)
     }
-
+//Admin Grabs Media. 2024. Android Display Bar Graph using Kotlin - Android Studio 2023 - Part 1 [Source Code]. Available at: < https://www.youtube.com/watch?v=-TGUV_LbcmE&list=PLlvGFqCblJgQ23xB6_aMvrQToXmDos2uM > [ Accessed on 03 Jube 2025]
     private fun setupChart() {
         lineChart.apply {
             description.isEnabled = false

@@ -14,6 +14,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.auth.FirebaseAuth
 
+// Navigate to MainActivity after login success
+// See Android Developers (2024) for startActivity usage
+
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth

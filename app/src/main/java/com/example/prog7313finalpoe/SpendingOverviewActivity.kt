@@ -16,7 +16,7 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 class SpendingOverviewActivity : AppCompatActivity() {
-
+//Admin Grabs Media. 2024. Android Display Bar Graph using Kotlin - Android Studio 2023 - Part 1 [Source Code]. Available at: < https://www.youtube.com/watch?v=-TGUV_LbcmE&list=PLlvGFqCblJgQ23xB6_aMvrQToXmDos2uM > [ Accessed on 03 Jube 2025]
     private lateinit var lineChart: LineChart
     private lateinit var db: FirebaseFirestore
     private val dateFormat = SimpleDateFormat("MMM dd", Locale.getDefault())

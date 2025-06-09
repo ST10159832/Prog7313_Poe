@@ -14,6 +14,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.firestore.FirebaseFirestore
 import java.util.Calendar
 
+//Jony Apps. 2021. Add Firebase to Android Project | Kotlin | Android Studio [Source Code]. Available at: < https://www.youtube.com/watch?v=K7QEyNVMxSA > [Accesssed on 28 May 2025]
+
 class AddExpenseActivity : AppCompatActivity() {
 
     private lateinit var etCategory: EditText

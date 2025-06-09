@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
 class HistoryOverviewActivity : AppCompatActivity() {
-
+//Admin Grabs Media. 2024. Android Display Bar Graph using Kotlin - Android Studio 2023 - Part 1 [Source Code]. Available at: < https://www.youtube.com/watch?v=-TGUV_LbcmE&list=PLlvGFqCblJgQ23xB6_aMvrQToXmDos2uM > [ Accessed on 03 Jube 2025]
     private lateinit var pieChart: PieChart
     private lateinit var categoryList: LinearLayout
     private lateinit var firestore: FirebaseFirestore

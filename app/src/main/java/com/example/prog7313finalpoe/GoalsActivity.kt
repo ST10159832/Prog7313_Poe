@@ -15,7 +15,7 @@ import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 
 class GoalsActivity : AppCompatActivity() {
-
+//Jony Apps. 2021. Add Firebase to Android Project | Kotlin | Android Studio [Source Code]. Available at: < https://www.youtube.com/watch?v=K7QEyNVMxSA > [Accesssed on 28 May 2025]
     private lateinit var etMinGoalAmount: EditText
     private lateinit var etMinGoalDate: EditText
     private lateinit var etMaxGoalAmount: EditText
